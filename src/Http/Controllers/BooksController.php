@@ -59,9 +59,11 @@ class BooksController extends Controller
                          $message['book'] = $k->books;
                          $message['users'] = $k->name;
                     }
+               }else{
+                    $message['book'] = $book;
                }
 
-               $message['book'] = $book;
+               
                $message['authors'] = $book->authors->name;
                $message['label'] = $book->labels->label_no;
 
