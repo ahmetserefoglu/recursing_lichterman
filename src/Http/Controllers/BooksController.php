@@ -56,12 +56,11 @@ class BooksController extends Controller
 
                if ($book->users) {
                     foreach ($book->users as $k) {
-                         $message['book'] = $k->books;
                          $message['users'] = $k->name;
                     }
-               }else{
-                    $message['book'] = $book;
                }
+
+               $message['book'] = $book;
 
                
                $message['authors'] = $book->authors->name;
