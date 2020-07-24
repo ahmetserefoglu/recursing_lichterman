@@ -1,0 +1,29 @@
+{
+    "name": "ahmetserefoglu/recursing_lichterman",
+    "description": "The booklist for Laravel Package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ahmetserefoglu",
+            "email": "ahmet.serefoglu46@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "5.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "AhmetSerefoglu\\RecursingLichterman\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AhmetSerefoglu\\RecursingLichterman\\BookListPackageServiceProvider"
+            ]
+        }
+    }
+}
